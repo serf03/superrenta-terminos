@@ -1,14 +1,20 @@
 export default function Header() {
   return (
-    <header className="bg-white border-b border-stone-200">
-      <div className="mx-auto max-w-4xl px-4 py-6 sm:px-6 lg:px-8">
-        <div className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-500 text-white font-bold text-lg">
-            S
+    <header className="sticky top-0 z-50 bg-white/70 backdrop-blur-xl border-b border-glass-border">
+      <div className="mx-auto max-w-3xl px-6 sm:px-8">
+        <div className="flex items-center justify-center h-16 relative">
+          <div className="absolute left-0">
+            <a
+              href="https://superrenta.app"
+              className="flex items-center justify-center w-9 h-9 rounded-xl bg-[#D76A49] text-white font-bold text-sm shadow-sm hover:opacity-90 transition-opacity"
+            >
+              S
+            </a>
           </div>
-          <div>
-            <h1 className="text-xl font-bold text-stone-900">SuperRenta</h1>
-            <p className="text-sm text-stone-500">Términos y Condiciones</p>
+          <div className="text-center">
+            <h1 className="text-[17px] font-bold text-heading tracking-[-0.3px]">
+              Términos y Condiciones
+            </h1>
           </div>
         </div>
       </div>
