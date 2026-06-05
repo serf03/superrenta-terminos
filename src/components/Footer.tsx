@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const year = new Date().getFullYear();
 
 export default function Footer() {
@@ -12,9 +14,9 @@ export default function Footer() {
             <a href="#" className="hover:text-heading transition-colors duration-200">
               Aviso de Privacidad
             </a>
-            <a href="mailto:soporte@superrenta.app" className="hover:text-heading transition-colors duration-200">
-              Contacto
-            </a>
+            <Link to="/delete-account" className="hover:text-heading transition-colors duration-200">
+              Eliminar cuenta
+            </Link>
           </div>
         </div>
       </div>
