@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Terminos from './components/Terminos'
 import Footer from './components/Footer'
 import DeleteAccountPage from './pages/DeleteAccountPage'
+import YaCasiPrivacyPage from './pages/YaCasiPrivacyPage'
 
 function HomePage() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/delete-account" element={<DeleteAccountPage />} />
+          <Route path="/YaCasi" element={<YaCasiPrivacyPage />} />
         </Routes>
       </div>
     </BrowserRouter>

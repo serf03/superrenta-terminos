@@ -10,10 +10,13 @@ export default function Footer() {
           <p className="text-sm text-muted">
             &copy; {year} SuperRenta. Todos los derechos reservados.
           </p>
-          <div className="flex gap-6 text-sm text-muted">
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-muted">
             <a href="#" className="hover:text-heading transition-colors duration-200">
               Aviso de Privacidad
             </a>
+            <Link to="/YaCasi" className="hover:text-heading transition-colors duration-200">
+              Privacidad de Ya Casi
+            </Link>
             <Link to="/delete-account" className="hover:text-heading transition-colors duration-200">
               Eliminar cuenta
             </Link>
