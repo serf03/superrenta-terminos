@@ -10,6 +10,7 @@
     }
   ],
   "rewrites": [
+    { "source": "/YaCasi/alert", "destination": "/alert.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
