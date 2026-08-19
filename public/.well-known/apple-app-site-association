@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["77M94F7P78.com.serf.cerca"],
+        "components": [
+          {
+            "/": "/YaCasi/alert*",
+            "comment": "Open shared Ya Casi proximity alerts"
+          }
+        ]
+      }
+    ]
+  }
+}

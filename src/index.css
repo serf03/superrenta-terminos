@@ -66,3 +66,139 @@ body {
     animation: none;
   }
 }
+/* Ya Casi shared alerts — a focused handoff from social apps to the native app. */
+.shared-alert-page {
+  --yc-ink: #10211d;
+  --yc-muted: #5e6e69;
+  --yc-green: #087f6c;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  padding: 32px 18px;
+  color: var(--yc-ink);
+  background:
+    radial-gradient(circle at 15% 10%, rgba(73, 210, 178, 0.28), transparent 34%),
+    linear-gradient(145deg, #edf8f5 0%, #f9fbfa 52%, #e5f2ee 100%);
+}
+
+.shared-alert-glow {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(1px);
+  opacity: 0.55;
+}
+
+.shared-alert-glow-one {
+  width: 260px;
+  height: 260px;
+  top: -90px;
+  right: -70px;
+  background: rgba(8, 127, 108, 0.18);
+}
+
+.shared-alert-glow-two {
+  width: 190px;
+  height: 190px;
+  bottom: -65px;
+  left: -45px;
+  background: rgba(255, 163, 92, 0.2);
+}
+
+.shared-alert-card {
+  width: min(100%, 520px);
+  position: relative;
+  z-index: 1;
+  padding: clamp(28px, 7vw, 52px);
+  border: 1px solid rgba(255, 255, 255, 0.88);
+  border-radius: 34px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 30px 80px rgba(16, 33, 29, 0.16);
+  backdrop-filter: blur(22px);
+}
+
+.shared-alert-mark {
+  width: 68px;
+  height: 68px;
+  display: grid;
+  place-items: center;
+  border-radius: 23px;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 800;
+  background: var(--yc-green);
+  box-shadow: 0 14px 32px rgba(8, 127, 108, 0.28);
+}
+
+.shared-alert-eyebrow {
+  margin: 28px 0 10px;
+  color: var(--yc-green);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.shared-alert-card h1 {
+  margin: 0;
+  max-width: 12ch;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(2.3rem, 9vw, 4.3rem);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+}
+
+.shared-alert-copy {
+  margin: 24px 0 0;
+  color: var(--yc-muted);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.shared-alert-actions {
+  display: grid;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.shared-alert-actions a {
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 22px;
+  border-radius: 17px;
+  text-decoration: none;
+  font-weight: 750;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.shared-alert-actions a:hover {
+  transform: translateY(-2px);
+}
+
+.shared-alert-primary {
+  color: #fff;
+  background: var(--yc-green);
+  box-shadow: 0 12px 28px rgba(8, 127, 108, 0.22);
+}
+
+.shared-alert-secondary {
+  color: var(--yc-green);
+  background: #e6f3ef;
+}
+
+.shared-alert-privacy {
+  margin: 24px 0 0;
+  padding-top: 18px;
+  border-top: 1px solid rgba(16, 33, 29, 0.1);
+  color: #788681;
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shared-alert-actions a {
+    transition: none;
+  }
+}
