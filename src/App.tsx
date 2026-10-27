@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import DeleteAccountPage from './pages/DeleteAccountPage'
 import YaCasiPrivacyPage from './pages/YaCasiPrivacyPage'
 import YaCasiSharedAlertPage from './pages/YaCasiSharedAlertPage'
+import UbichatPrivacyPage from './pages/UbichatPrivacyPage'
 
 function HomePage() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
           <Route path="/delete-account" element={<DeleteAccountPage />} />
           <Route path="/YaCasi" element={<YaCasiPrivacyPage />} />
           <Route path="/YaCasi/alert" element={<YaCasiSharedAlertPage />} />
+          <Route path="/ubichat" element={<UbichatPrivacyPage />} />
         </Routes>
       </div>
     </BrowserRouter>
