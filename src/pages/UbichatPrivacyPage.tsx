@@ -160,7 +160,7 @@ export default function UbichatPrivacyPage() {
                 <strong className="text-[#2b231c]">Expo</strong> (notificaciones push): recibe el token de notificaciones y el contenido mínimo para avisarte. Nunca el contenido de tus mensajes.
               </li>
               <li>
-                <strong className="text-[#2b231c]">[Proveedor de alojamiento del servidor]</strong>: aloja el servidor, donde solo hay datos cifrados o huellas.
+                <strong className="text-[#2b231c]">Hostinger</strong> (servidor virtual): aloja el servidor, donde solo hay datos cifrados o huellas.
               </li>
             </BulletList>
             <p>No compartimos tus datos con terceros para publicidad ni para analítica. Algunos proveedores pueden tratar datos fuera de tu país, con las garantías que exige la normativa aplicable.</p>

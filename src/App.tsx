@@ -6,6 +6,7 @@ import DeleteAccountPage from './pages/DeleteAccountPage'
 import YaCasiPrivacyPage from './pages/YaCasiPrivacyPage'
 import YaCasiSharedAlertPage from './pages/YaCasiSharedAlertPage'
 import UbichatPrivacyPage from './pages/UbichatPrivacyPage'
+import UbichatSupportPage from './pages/UbichatSupportPage'
 
 function HomePage() {
   return (
@@ -29,6 +30,7 @@ export default function App() {
           <Route path="/YaCasi" element={<YaCasiPrivacyPage />} />
           <Route path="/YaCasi/alert" element={<YaCasiSharedAlertPage />} />
           <Route path="/ubichat" element={<UbichatPrivacyPage />} />
+          <Route path="/ubichat/soporte" element={<UbichatSupportPage />} />
         </Routes>
       </div>
     </BrowserRouter>
